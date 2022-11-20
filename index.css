@@ -1,0 +1,108 @@
+.container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  width: 100%;
+  height: 450px;
+}
+
+.card {
+  border: 5px black solid;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+  width: 35%;
+  height: 39%;
+}
+.card > audio {
+  display: none;
+}
+
+#animal,
+#sonidoAnimal,
+#tipoVoz {
+  font-size: 25px;
+  font-family: cursive;
+}
+.text {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+.text > p {
+  margin: 4px;
+  text-transform: uppercase;
+}
+.image {
+  text-align: center;
+}
+.image > img {
+  width: 50%;
+}
+.mostrador {
+  background-color: #e2dd42;
+  /* border:25px blue solid;
+  border-radius: 25px; */
+}
+.mostrador-container {
+  background-color: #0052bf;
+  border: 20px #0052bf solid;
+  border-bottom: 0px;
+  border-radius: 15px;
+}
+.footer-mostrador {
+  background-color: #0052bf;
+}
+div.nina > img {
+  width: 100%;
+  /* margin-left: -5%; */
+}
+#superNina,
+#text_Animal {
+  display: none;
+}
+.back {
+  display: flex;
+  justify-content: space-between;
+}
+#text_Animal,
+#text_inicial {
+  border: 1px #000000 solid;
+  border-radius: 20px;
+  background-color: white;
+  padding: 8% 8% 8% 8%;
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 10%;
+  margin-bottom: -5%;
+  position: relative;
+}
+#text_Animal {
+  padding: 4%;
+}
+#ninaArriba {
+  margin-top: -4%;
+}
+.nina {
+  text-align: center;
+  background-color: #000000;
+}
+.text-mostrador {
+  text-align: center;
+  font-size: larger;
+}
+.footer-mostrador {
+  padding: 2%;
+}
+.footer-mostrador > span {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* #text_inicial>span {
+  width: 0;
+  height: 0;
+  border-left: 100px solid #f0ad4e;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+
+} */
