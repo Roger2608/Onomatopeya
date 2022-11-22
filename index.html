@@ -1,256 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onomatopeya - Animales</title>
-    <link rel="stylesheet" href="/index.css" />
-  </head>
-  <body>
-    <div class="back">
-      <div class="nina">
-        <div class="pensamiento_nina">
-          <p id="text_Animal">
-            El <span id="animal"></span> hace <span id="sonidoAnimal"></span>
-            <br />
-            Su tipo de voz es: <span id="tipoVoz"></span>
-          </p>
-          <p id="text_inicial">
-            Si quieres saber como hacen los animales da click en uno de ellos
-            <span></span>
-          </p>
-        </div>
-        <img
-          src="/assets/images/super_niña.jpg"
-          alt="super niña"
-          id="superNina"
-        />
-        <img
-          src="/assets/images/niña_mirando_arriba.jpg"
-          alt="niña mirando hacia arriba"
-          id="ninaArriba"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onomatopeya - Animales</title>
+  <link rel="stylesheet" href="/estilos.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <main class="back">
+    <div class="nina">
+      <div class="pensamiento_nina">
+        <p id="text_Animal" class="mb-0">
+          El <span id="animal"></span> hace <span id="sonidoAnimal"></span>
+          <br />
+          Su tipo de voz es: <span id="tipoVoz"></span>
+        </p>
+        <p id="text_inicial" class="mb-0">
+          Si quieres saber como hacen los animales da click en uno de ellos
+          <span></span>
+        </p>
       </div>
-      <div class="mostrador-container">
-        <div class="mostrador">
-          <div class="text-mostrador">
-            <h3>Sonidos Onomatopeyicos</h3>
-            <hr />
-            <div class="container-card">
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/lion.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> LEON - LION </span></p>
-                  <input type="hidden" id="type_sound" value="rugido" />
-                  <input type="hidden" id="animal_sound" value="ruah" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="/assets/images/lion.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/bee.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Abeja - Bee </span></p>
-                  <input type="hidden" id="type_sound" value="zumbar" />
-                  <input type="hidden" id="animal_sound" value="Bzzzz" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/cat.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Gato - Cat </span></p>
-                  <input type="hidden" id="type_sound" value="maullido" />
-                  <input type="hidden" id="animal_sound" value="miau" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/chicken.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Pollo - chicken </span></p>
-                  <input type="hidden" id="type_sound" value="piar" />
-                  <input type="hidden" id="animal_sound" value="pío, pío" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/cow.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Vaca - cow </span></p>
-                  <input type="hidden" id="type_sound" value="mugido" />
-                  <input type="hidden" id="animal_sound" value="muuuuuu" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/dog.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Perro - Dog </span></p>
-                  <input type="hidden" id="type_sound" value="ladrido" />
-                  <input type="hidden" id="animal_sound" value="guau" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/duck.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Pato - duck </span></p>
-                  <input type="hidden" id="type_sound" value="graznido" />
-                  <input type="hidden" id="animal_sound" value="cua" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/frog.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Rana - frog </span></p>
-                  <input type="hidden" id="type_sound" value="croar" />
-                  <input type="hidden" id="animal_sound" value="croá, croá" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/horse.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Caballo - horse </span></p>
-                  <input type="hidden" id="type_sound" value="relincho" />
-                  <input type="hidden" id="animal_sound" value="ñee" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/pig.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Cerdo - pig </span></p>
-                  <input type="hidden" id="type_sound" value="gruñido" />
-                  <input type="hidden" id="animal_sound" value="oinc" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/rooster.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Gallo - rooster </span></p>
-                  <input type="hidden" id="type_sound" value="cacareo" />
-                  <input type="hidden" id="animal_sound" value="quiquiriquí" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <audio controls>
-                  <source src="/assets/music/sheep.mp3" type="audio/mpeg" />
-                </audio>
-                <div class="text">
-                  <p><span> Oveja - sheep </span></p>
-                  <input type="hidden" id="type_sound" value="balido" />
-                  <input type="hidden" id="animal_sound" value="bee" />
-                </div>
-                <hr />
-                <div class="image">
-                  <img
-                    src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
-                    alt="Leon"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="footer-mostrador">
-              <span>↑ Desliza hacia abajo para ver más animales ↓</span>
-            </div>
-          </div>
+      <div class="content-nina">
+        <div id="superNina">
+          <img src="/assets/images/super_niña.jpg" alt="super niña" />
+        </div>
+        <div id="ninaArriba">
+          <img src="/assets/images/niña_mirando_arriba.jpg" alt="niña mirando hacia arriba"  />
         </div>
       </div>
     </div>
+    <div class="mostrador-container">
+      <div class="mostrador">
+          <h3>Sonidos Onomatopeyicos</h3>
+          <hr />
+          <div class="container-card">
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/lion.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> LEON - LION </span></p>
+                <input type="hidden" id="type_sound" value="rugido" />
+                <input type="hidden" id="animal_sound" value="ruah" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="/assets/images/lion.jpg" alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/bee.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Abeja - Bee </span></p>
+                <input type="hidden" id="type_sound" value="zumbar" />
+                <input type="hidden" id="animal_sound" value="Bzzzz" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/abeja.jpg"
+                  alt="Abeja" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/cat.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Gato - Cat </span></p>
+                <input type="hidden" id="type_sound" value="maullido" />
+                <input type="hidden" id="animal_sound" value="miau" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/cat.jpg"
+                  alt="Gato" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/chicken.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Pollo - chicken </span></p>
+                <input type="hidden" id="type_sound" value="piar" />
+                <input type="hidden" id="animal_sound" value="pío, pío" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/pollo.jpg"
+                  alt="Pollo" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/cow.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Vaca - cow </span></p>
+                <input type="hidden" id="type_sound" value="mugido" />
+                <input type="hidden" id="animal_sound" value="muuuuuu" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/vaca.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/dog.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Perro - Dog </span></p>
+                <input type="hidden" id="type_sound" value="ladrido" />
+                <input type="hidden" id="animal_sound" value="guau" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/dog.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/duck.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Pato - duck </span></p>
+                <input type="hidden" id="type_sound" value="graznido" />
+                <input type="hidden" id="animal_sound" value="cua" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="https://curiosfera-animales.com/wp-content/uploads/2020/10/caracteristicas-del-leon.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/frog.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Rana - frog </span></p>
+                <input type="hidden" id="type_sound" value="croar" />
+                <input type="hidden" id="animal_sound" value="croá, croá" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/rana.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/horse.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Caballo - horse </span></p>
+                <input type="hidden" id="type_sound" value="relincho" />
+                <input type="hidden" id="animal_sound" value="ñee" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/caballo.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/pig.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Cerdo - pig </span></p>
+                <input type="hidden" id="type_sound" value="gruñido" />
+                <input type="hidden" id="animal_sound" value="oinc" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/chancho.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/rooster.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Gallo - rooster </span></p>
+                <input type="hidden" id="type_sound" value="cacareo" />
+                <input type="hidden" id="animal_sound" value="quiquiriquí" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/gallo.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+            <div class="card">
+              <audio controls>
+                <source src="/assets/music/sheep.mp3" type="audio/mpeg" />
+              </audio>
+              <div class="text">
+                <p><span> Oveja - sheep </span></p>
+                <input type="hidden" id="type_sound" value="balido" />
+                <input type="hidden" id="animal_sound" value="bee" />
+              </div>
+              <hr />
+              <div class="image">
+                <img src="./assets/images/oveja.jpg"
+                  alt="Leon" />
+              </div>
+            </div>
+          </div>
+          <!-- <div class="footer-mostrador">
+            <span>↑ Desliza hacia abajo para ver más animales ↓</span>
+          </div> -->
+      </div>
+    </div>
+  </main>
 
-    <script src="/index.js"></script>
-  </body>
+  <script src="/index.js"></script>
+</body>
+
 </html>

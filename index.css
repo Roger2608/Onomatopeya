@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container-card {
   display: flex;
   justify-content: center;
@@ -46,7 +51,7 @@
 }
 .mostrador-container {
   background-color: #0052bf;
-  border: 20px #0052bf solid;
+  border: 20px #3f5573 solid;
   border-bottom: 0px;
   border-radius: 15px;
 }
